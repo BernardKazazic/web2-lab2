@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <title>Web Lab 2</title>
+</head>
+<body>
+    <div class="button-container center">
+        <a class="button" href="/broken-access/safe/user">User</a>
+        <% if (isAdmin) { %>
+            <a class="button" href="/broken-access/safe/admin">Admin</a>
+        <% } %>
+        <a class="button" href="/broken-access">Home</a>
+    </div>
+</body>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Web Lab 2 - XSS</title>
+</head>
+<body class="app-container">
+    <section id="user-input">
+        <h1>XSS - Unsafe site</h1>
+        <form class="form-container" method="POST">
+            <div >
+                <label class="form-field" for="user-message">Message input</label>
+                <textarea class="form-field" id="user-message" name="message" ></textarea>
+            </div>
+            <button class="form=button" type="submit">Submit</button>
+        </form>
+    </section>
+     
+    <section id="user-messages"></section>
+        <ul class="center basic-container"><%- message %></ul>
+    </section>
+            
+    <div class="button-container">
+        <a class="button" href="/">Exercise selection</a>
+        <a class="button" href="/xss/safe">Safe</a>
+        <a class="button" href="/xss/unsafe">Unsafe</a>
+    </div>
+</body>

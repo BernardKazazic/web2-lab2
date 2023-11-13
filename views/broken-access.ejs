@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Lab 2</title>
+</head>
+<body>
+    <div class="center">
+        <p>Hi <%= username %></p>
+    </div>
+    <div class="center">
+        <p >You can use users User and Admin for this part.<br>
+            Login for Admin is:<br>
+                admin@weblab.com<br>
+                Admin123<br>
+            Login for User is:<br>
+                user@weblab.com<br>
+                User1234<br>
+            <br>
+            With User on broken site you will be able to enter admin page trough url.<br>
+            On safe site you will be redirected to home page.
+        </p>
+    </div>
+    <div class="button-container center">
+        <a class="button" href="/broken-access/login">Login</a>
+        <a class="button" href="/broken-access/logout">Logout</a>
+    </div>
+    <div class="button-container center">
+        <a class="button" href="/">Exercise selection</a>
+        <a class="button" href="/broken-access">Home</a>
+        <a class="button" href="/broken-access/safe/dashboard">Safe</a>
+        <a class="button" href="/broken-access/unsafe/dashboard">Unsafe</a>
+    </div>
+</body>
+</html>
